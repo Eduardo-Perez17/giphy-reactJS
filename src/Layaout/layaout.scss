@@ -1,0 +1,20 @@
+@import '../assets/sass/_variables.scss';
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	background-color: $background;
+	color: $color;
+}
+
+.grid-father {
+	display: grid;
+	grid-template-columns: 30px 1fr 30px;
+}
+
+.grid-son {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}

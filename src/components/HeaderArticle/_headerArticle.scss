@@ -1,0 +1,16 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/mixins';
+
+.header__article {
+	@include containerJustify(flex, center, 10px);
+
+	input {
+		width: 100%;
+		@include border;
+	}
+
+	button {
+		background-image: $background-gradient-bottom;
+		@include border;
+	}
+}

@@ -1,0 +1,43 @@
+$color: #fff;
+$color-transparent: #ffffffcf;
+$background: #121212;
+$background-secundary: #3c3c3c;
+$color-icon: #536ed7;
+
+$background-gradient: linear-gradient(
+		to right,
+		rgb(0, 204, 255),
+		rgb(153, 51, 255) 31%,
+		rgb(230, 70, 182) 52%,
+		rgb(255, 249, 170) 77%,
+		rgb(0, 255, 153),
+		rgb(0, 204, 255)
+	)
+	0% 50% / 200% 50%;
+$background-gradient-bottom: linear-gradient(
+	263.55deg,
+	rgb(153, 51, 255) -5.88%,
+	rgb(97, 87, 255) 194.65%
+);
+$background-gradient-bottomV2: linear-gradient(
+	45deg,
+	rgb(153, 51, 255) 0%,
+	rgb(255, 102, 102) 50%,
+	rgb(153, 51, 255) 100%
+);
+
+$background-generator: linear-gradient(
+	to right top,
+	#ff3dab,
+	#f437b0,
+	#e932b4,
+	#dd2fb9,
+	#cf2dbd,
+	#c12bb9,
+	#b42ab5,
+	#a628b0,
+	#9624a3,
+	#872096,
+	#781c89,
+	#6a187c
+);

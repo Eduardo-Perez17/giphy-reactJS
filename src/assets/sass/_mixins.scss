@@ -1,0 +1,22 @@
+@mixin containerJustify($display, $justify, $gap) {
+	display: $display;
+	justify-content: $justify;
+	gap: $gap;
+}
+
+@mixin containerAlignItems($display, $justify, $gap) {
+	display: $display;
+	align-items: $justify;
+	gap: $gap;
+}
+
+@mixin contaienrGridColumn($display, $justify, $align) {
+	display: $display;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin border {
+	border: none;
+	border-radius: 2px;
+}
