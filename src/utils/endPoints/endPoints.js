@@ -6,8 +6,6 @@ export const API_URL = {
 	trending: `${URL_API}trending?api_key=${API_KEY}`,
 	random: `${URL_API}random?api_key=${API_KEY}`,
 	categories: `${URL_API}categories?api_key=${API_KEY}`,
-
-	clips: 'https://api.giphy.com/v1/clips/trending',
 };
 
 export const API_URL_DATA_HOME = {
@@ -86,6 +84,8 @@ export const NOT_FOUND = {
 	path: '*',
 	name: 'not found',
 };
+
+export const NAVBAR_HOME_DESKTOP = ['category', 'clips', 'more gif'];
 
 /*
 ejemplo sin parametros :
