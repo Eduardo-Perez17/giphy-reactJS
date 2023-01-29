@@ -6,14 +6,39 @@
 	display: grid;
 	grid-gap: 12px;
 
+	.article__data {
+		.bar_blue::-webkit-scrollbar-thumb {
+			background: #536ed7;
+			border-radius: 4px;
+		}
+
+		.bar_red::-webkit-scrollbar-thumb {
+			background: #ff6666;
+			border-radius: 4px;
+		}
+
+		.bar_pink::-webkit-scrollbar-thumb {
+			background: #ff3dab;
+			border-radius: 4px;
+		}
+	}
+
 	.card__data--home {
 		margin-top: 60px;
 		display: grid;
 		gap: 10px;
 
-		.gif__article--home-item {
-			img {
-				width: 100%;
+		.gif__article--home {
+			display: grid;
+			gap: 10px;
+			grid-template-columns: 1fr;
+			.gif__article--home-item {
+				display: grid;
+				justify-content: center;
+				img {
+					width: 200px;
+					height: 250px;
+				}
 			}
 		}
 	}
@@ -71,5 +96,97 @@
 
 	.gif-animals {
 		height: 220px;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 725px) {
+	.article .card__data--home .gif__article--home {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: repeat(2, 200px);
+		.gif__article--home-item {
+			display: grid;
+			justify-content: center;
+			img {
+				width: 200px;
+				height: 250px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 725px) {
+	.article .card__data--home .gif__article--home {
+		margin: 30px 0;
+		display: grid;
+		gap: 10px;
+		grid-template-columns: repeat(2, 200px);
+		justify-content: center;
+		.gif__article--home-item {
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 250px;
+				height: 350px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 726px) and (max-width: 1024px) {
+	.article .card__data--home .gif__article--home {
+		margin: 30px 0;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(3, 200px);
+		justify-content: center;
+		.gif__article--home-item {
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 280px;
+				height: 350px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+	.article .card__data--home .gif__article--home {
+		margin: 50px 0;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(4, 200px);
+		justify-content: center;
+		.gif__article--home-item {
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 300px;
+				height: 350px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+	.article .card__data--home .gif__article--home {
+		margin: 50px 0;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(5, 200px);
+		justify-content: center;
+		.gif__article--home-item {
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 300px;
+				height: 330px;
+			}
+		}
 	}
 }

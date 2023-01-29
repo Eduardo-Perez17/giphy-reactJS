@@ -27,7 +27,9 @@ const Article = () => {
 			<ContainerArticleData
 				classIcon='icon-main icon-treding'
 				title='Trending'
-				componentChildren={<CardDataArticleHome dataCard={dataTrending} />}>
+				componentChildren={
+					<CardDataArticleHome dataCard={dataTrending} classCard='bar_blue' />
+				}>
 				<BiTrendingUp />
 			</ContainerArticleData>
 
@@ -35,7 +37,11 @@ const Article = () => {
 				classIcon='icon-main icon-paw'
 				title='Animals'
 				componentChildren={
-					<CardDataArticleHome dataCard={animals?.data} classGif='gif-animals' />
+					<CardDataArticleHome
+						dataCard={animals?.data}
+						classGif='gif-animals'
+						classCard='bar_red'
+					/>
 				}>
 				<FaPaw />
 			</ContainerArticleData>
@@ -43,7 +49,9 @@ const Article = () => {
 			<ContainerArticleData
 				classIcon='icon-main icon-music'
 				title='Music'
-				componentChildren={<CardDataArticleHome dataCard={music?.data} />}>
+				componentChildren={
+					<CardDataArticleHome dataCard={music?.data} classCard='bar_pink' />
+				}>
 				<BsMusicNote />
 			</ContainerArticleData>
 			<ContainerArticleAllDataGifs dataGiphyHome={dataGiphyHome} />

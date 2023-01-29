@@ -1,14 +1,13 @@
 @import '../../assets/sass/variables';
+@import '../../assets/sass/mixins';
 
 .header__home {
 	margin: 30px 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@include contaienrGridColumn(flex, space-between, center);
+
 	.header__home--header {
-		display: flex;
-		align-items: center;
-		gap: 10px;
+		@include containerAlignItems(flex, center, 10px);
+
 		img {
 			width: 35px;
 		}
@@ -31,9 +30,8 @@
 
 			.menu {
 				margin: 50px 0;
-				display: flex;
 				gap: 20px;
-				flex-direction: column;
+				@include flexDirection;
 			}
 
 			a {
@@ -45,10 +43,8 @@
 			.menu-button {
 				position: absolute;
 				bottom: 90px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
 				gap: 10px;
+				@include contaienrGridColumn(flex, center, center);
 				button {
 					border: none;
 					padding: 5px 10px;
@@ -59,5 +55,28 @@
 				}
 			}
 		}
+	}
+	.header__home--menu-desktop {
+		.header__home--header {
+			display: none;
+		}
+		.menu-button {
+			display: none;
+		}
+		.menu {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 1100px) {
+	.header__home--menu-desktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.header__home--menu {
+		display: none;
 	}
 }

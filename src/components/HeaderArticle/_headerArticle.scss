@@ -14,3 +14,26 @@
 		@include border;
 	}
 }
+
+@media screen and (min-width: 1110px) {
+	.header__main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.header__article {
+			@include containerJustify(flex, flex-start, 15px);
+			input {
+				width: 80%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.header__article {
+		@include containerJustify(flex, flex-start, 15px);
+		input {
+			width: 40%;
+		}
+	}
+}

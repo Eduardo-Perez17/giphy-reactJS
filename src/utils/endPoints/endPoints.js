@@ -57,7 +57,7 @@ export const HOME_NAVIGATION = [
 		path: `${URL_API_SEARCH}?q=love&api_key=${API_KEY}`,
 	},
 	{
-		name: 'stphen curry',
+		name: 'stephen curry',
 		path: `${URL_API_SEARCH}?q=curry&api_key=${API_KEY}`,
 	},
 ];

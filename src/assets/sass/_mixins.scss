@@ -16,6 +16,21 @@
 	align-items: $align;
 }
 
+@mixin containerGrid($column, $fraction) {
+	display: grid;
+	grid-template-columns: repeat($column, $fraction);
+}
+
+@mixin containerGridMargin($columnOne, $columnTwo, $columnThree) {
+	display: grid;
+	grid-template-columns: $columnOne $columnTwo $columnThree;
+}
+
+@mixin flexDirection {
+	display: flex;
+	flex-direction: column;
+}
+
 @mixin border {
 	border: none;
 	border-radius: 2px;

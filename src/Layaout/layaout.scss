@@ -1,4 +1,5 @@
 @import '../assets/sass/_variables.scss';
+@import '../assets/sass/mixins';
 
 body {
 	margin: 0;
@@ -9,12 +10,50 @@ body {
 	color: $color;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #5a5a5a62;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $background-generator;
+	border-radius: 2px;
+}
+
+.slider::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
 .grid-father {
-	display: grid;
-	grid-template-columns: 30px 1fr 30px;
+	@include containerGridMargin(30px, 1fr, 30px);
 }
 
 .grid-son {
 	grid-column-start: 2;
 	grid-column-end: 3;
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+	.grid-father {
+		@include containerGridMargin(70px, 1fr, 70px);
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+	.grid-father {
+		@include containerGridMargin(110px, 1fr, 110px);
+	}
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1440px) {
+	.grid-father {
+		@include containerGridMargin(140px, 1fr, 140px);
+	}
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+	.grid-father {
+		@include containerGridMargin(180px, 1fr, 180px);
+	}
 }

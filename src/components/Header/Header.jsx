@@ -14,15 +14,20 @@ const Header = () => {
 	const menuToggleHandle = () => setMenuToggle(!menuToggle);
 
 	return (
-		<Container containerStyle='header__home'>
-			<Logo />
-			<Container
-				containerStyle='header__home--menu'
-				containerEventClick={menuToggleHandle}>
-				<Image srcImg={IMAGES.menuApp} altImg={IMAGES.menuApp} />
-				{menuToggle && <MenuNavBar menuStyle='header__home--header-mobile' />}
+		<>
+			<Container containerStyle='header__home'>
+				<Logo />
+				<Container
+					containerStyle='header__home--menu'
+					containerEventClick={menuToggleHandle}>
+					<Image srcImg={IMAGES.menuApp} altImg={IMAGES.menuApp} />
+					{menuToggle && <MenuNavBar menuStyle='header__home--header-mobile' />}
+				</Container>
+				<Container containerStyle='header__home--menu-desktop'>
+					<MenuNavBar menuStyle='header__home--header-desktop-item' />
+				</Container>
 			</Container>
-		</Container>
+		</>
 	);
 };
 
