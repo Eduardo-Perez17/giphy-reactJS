@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { IMAGES } from '../../utils/Images/Images';
+import { Link } from 'react-router-dom';
+import { HOME } from '../../utils/endPoints/endPoints';
 
 import './_header.scss';
 
@@ -16,7 +18,9 @@ const Header = () => {
 	return (
 		<>
 			<Container containerStyle='header__home'>
-				<Logo />
+				<Link to={HOME.path}>
+					<Logo />
+				</Link>
 				<Container
 					containerStyle='header__home--menu'
 					containerEventClick={menuToggleHandle}>

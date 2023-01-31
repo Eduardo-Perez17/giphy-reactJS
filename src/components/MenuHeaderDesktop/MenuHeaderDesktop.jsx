@@ -1,3 +1,4 @@
+import React from 'react';
 import { NAVBAR_HOME_DESKTOP } from '../../utils/endPoints/endPoints';
 
 import './menuHeaderDesktop.scss';
@@ -9,7 +10,9 @@ const MenuHeaderDesktop = () => {
 	return (
 		<Container containerStyle='header__navBar--desktop'>
 			{NAVBAR_HOME_DESKTOP.map((navBarItem) => (
-				<Paragraph>{navBarItem}</Paragraph>
+				<React.Fragment key={navBarItem}>
+					<Paragraph>{navBarItem}</Paragraph>
+				</React.Fragment>
 			))}
 		</Container>
 	);

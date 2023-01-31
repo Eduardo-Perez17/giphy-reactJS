@@ -11,13 +11,13 @@ import { Image } from '../Image';
 const HeaderArticle = () => {
 	return (
 		<>
-			<MenuHeaderDesktop />
 			<Container containerStyle='header__article'>
 				<Input inputType='text' inputPlaceholder='Search all the GIFs' />
 				<Button>
 					<Image srcImg={IMAGES.lupaApp} altImg={IMAGES.lupaApp} />
 				</Button>
 			</Container>
+			<MenuHeaderDesktop />
 		</>
 	);
 };

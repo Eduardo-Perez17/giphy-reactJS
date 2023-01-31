@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDataGifHome } from '../../context/dataGifHome/useDataGifHome';
+import { TRENDING, MUSIC, ANIMALS } from '../../utils/endPoints/endPoints';
 
 import './_article.scss';
 
@@ -25,6 +26,7 @@ const Article = () => {
 	return (
 		<Container containerStyle='article'>
 			<ContainerArticleData
+				path={TRENDING.path}
 				classIcon='icon-main icon-treding'
 				title='Trending'
 				componentChildren={
@@ -34,6 +36,7 @@ const Article = () => {
 			</ContainerArticleData>
 
 			<ContainerArticleData
+				path={ANIMALS.path}
 				classIcon='icon-main icon-paw'
 				title='Animals'
 				componentChildren={
@@ -47,6 +50,7 @@ const Article = () => {
 			</ContainerArticleData>
 
 			<ContainerArticleData
+				path={MUSIC.path}
 				classIcon='icon-main icon-music'
 				title='Music'
 				componentChildren={

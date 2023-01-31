@@ -9,8 +9,8 @@ export const API_URL = {
 };
 
 export const API_URL_DATA_HOME = {
-	animals: `${URL_API_SEARCH}?q=animals&api_key=${API_KEY}&limit=10`,
-	music: `${URL_API_SEARCH}?q=music&api_key=${API_KEY}&limit=10`,
+	animals: `${URL_API_SEARCH}?q=animals&api_key=${API_KEY}`,
+	music: `${URL_API_SEARCH}?q=music&api_key=${API_KEY}`,
 };
 
 export const HOME_NAVIGATION = [
@@ -73,6 +73,16 @@ export const GIF = {
 export const TRENDING = {
 	path: '/trending',
 	name: 'trending',
+};
+
+export const MUSIC = {
+	path: '/music',
+	name: 'musica',
+};
+
+export const ANIMALS = {
+	path: '/animals',
+	name: 'animales',
 };
 
 export const CATEGORY = {

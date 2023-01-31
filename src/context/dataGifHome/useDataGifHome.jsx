@@ -10,8 +10,12 @@ export const useDataGifHome = () => {
 
 	const resolveData = async () => {
 		const dataTrending = await returnGetDataAsynchronous(API_URL.trending);
-		const dataAnimals = await returnGetDataAsynchronous(API_URL_DATA_HOME.animals);
-		const dataMusic = await returnGetDataAsynchronous(API_URL_DATA_HOME.music);
+		const dataAnimals = await returnGetDataAsynchronous(
+			`${API_URL_DATA_HOME.animals}&limit=10`,
+		);
+		const dataMusic = await returnGetDataAsynchronous(
+			`${API_URL_DATA_HOME.music}&limit=10`,
+		);
 
 		setMusic(dataMusic);
 		setAnimals(dataAnimals);

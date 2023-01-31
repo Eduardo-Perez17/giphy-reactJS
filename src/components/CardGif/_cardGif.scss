@@ -1,0 +1,38 @@
+.article-gif {
+	margin: 30px 0;
+	display: grid;
+	grid-gap: 30px;
+
+	.gif__article--home-item {
+		border-radius: 4px;
+		background-color: #3c3c3c;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		img {
+			height: auto;
+			height: 100%;
+			max-width: none;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.user,
+		h3 {
+			padding: 10px;
+		}
+
+		.user {
+			display: flex;
+			gap: 5px;
+			justify-content: center;
+			align-items: center;
+
+			svg {
+				color: #536ed7;
+			}
+		}
+	}
+}

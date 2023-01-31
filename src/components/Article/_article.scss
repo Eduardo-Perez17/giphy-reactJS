@@ -30,14 +30,36 @@
 
 		.gif__article--home {
 			display: grid;
-			gap: 10px;
+			gap: 20px;
 			grid-template-columns: 1fr;
 			.gif__article--home-item {
+				border-radius: 4px;
+				background-color: $background-secundary;
 				display: grid;
 				justify-content: center;
+				align-items: center;
+				text-align: center;
 				img {
-					width: 200px;
-					height: 250px;
+					height: auto;
+					height: 100%;
+					max-width: none;
+					object-fit: cover;
+					width: 100%;
+				}
+
+				h3,
+				p {
+					padding: 10px;
+				}
+
+				.user {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					svg {
+						color: #536ed7;
+					}
 				}
 			}
 		}
@@ -107,10 +129,6 @@
 		.gif__article--home-item {
 			display: grid;
 			justify-content: center;
-			img {
-				width: 200px;
-				height: 250px;
-			}
 		}
 	}
 }
@@ -126,10 +144,6 @@
 			display: grid;
 			justify-content: center;
 			align-items: center;
-			img {
-				width: 250px;
-				height: 350px;
-			}
 		}
 	}
 }
@@ -145,10 +159,6 @@
 			display: grid;
 			justify-content: center;
 			align-items: center;
-			img {
-				width: 280px;
-				height: 350px;
-			}
 		}
 	}
 }
@@ -164,10 +174,6 @@
 			display: grid;
 			justify-content: center;
 			align-items: center;
-			img {
-				width: 300px;
-				height: 350px;
-			}
 		}
 	}
 }
@@ -183,10 +189,6 @@
 			display: grid;
 			justify-content: center;
 			align-items: center;
-			img {
-				width: 300px;
-				height: 330px;
-			}
 		}
 	}
 }
